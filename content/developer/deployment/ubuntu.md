@@ -175,7 +175,7 @@ This command will take a couple of minutes to finish running.
 Once it's finished running, run this command to make that version of Ruby the
 default for this user:
 
-rvm use 1.9.3 --default
+    rvm use 1.9.3 --default
 
 Ensure that this version of Ruby is really the new default by running this
 command:
@@ -473,8 +473,8 @@ env = ENV["RAILS_ENV"] || "development"
 worker_processes 4
 
 # listen on both a Unix domain socket and a TCP port, # we use a shorter backlog
-# for quicker failover when busy listen "/tmp/[application's name].socket",
-backlog: 64
+# for quicker failover when busy 
+listen "/tmp/[application's name].socket", backlog: 64
 
 # Preload our app for more speed
 preload_app true
